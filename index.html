@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usama Usman</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <style type="text/tailwindcss">
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ==== Header ==== -->
+    <header
+      x-data="{navbarOpen:false}"
+      class="absolute sticky left-0 top-0 z-50 bg-white/90 w-full backdrop-blur"
+    >
+      <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
+        <div
+          class="relative flex h-full items-center justify-between border-b border-slate-500/10"
+        >
+          <!-- logo -->
+          <div class="max-w-full w-[15rem]">
+            <a href="#">
+              <span>Usama Usman</span>
+            </a>
+          </div>
+          <!-- END logo -->
+
+          <!-- menu  -->
+          <div class="flex w-full items-center justify-between">
+            <nav
+              x-transition
+              :class="!navbarOpen && 'hidden'"
+              id="navbarCollapse"
+              class="absolute right-0 top-[90px] w-full max-w-[350px] rounded-lg border border-black-200 bg-white py-5 px-6 shadow-lg shadow-black-400/5 transition-all lg:static lg:block lg:max-w-full lg:border-none lg:shadow-none lg:bg-transparent lg:px-0 lg-py-0"
+            >
+              <ul class="flex flex-col justify-center gap-8 lg:flex-row">
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg font-medium text-slate-700 duration-200 hover:font-bold lg:text-base"
+                    >Home
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg font-medium text-slate-700 duration-200 hover:font-bold lg:text-base"
+                    >About
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg font-medium text-slate-700 duration-200 hover:font-bold lg:text-base"
+                    >Tools & Techs.
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg font-medium text-slate-700 duration-200 hover:font-bold lg:text-base"
+                    >Portfolio
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- END menu  -->
+
+          <!-- Menu Btn  -->
+          <div class="flex">
+            <a
+              href="#"
+              class="mr-10 hidden rounded-md bg-slate-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-slate-500/20 duration-200 hover:bg-slate-600 sm:block lg:mr-0"
+            >
+              Contact
+            </a>
+
+            <button
+              @click="navbarOpen = !navbarOpen"
+              :class="navbarOpen && 'navbarTogglerActive'"
+              id="navbarToggler"
+              class="block lg:hidden"
+            >
+              <ion-icon
+                class="text-4xl text-slate-500"
+                name="menu-outline"
+              ></ion-icon>
+            </button>
+          </div>
+          <!-- END Menu Btn  -->
+        </div>
+      </div>
+    </header>
+    <!-- ==== END Header ==== -->
+
+    <!-- ==== Hero ==== -->
+    <section class="relative bg-white py-16 lg:pt-[100px]">
+      <div class="mx-auto max-w-7xl px-8 md:px-6">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-5/12">
+            <h1
+              class="text-slate-400 mb-3 text-4xl leadng-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]"
+            >
+              Welcome to the World of
+              <span class="text-slate-900 font-bold">
+                Creative Super Hero
+              </span>
+            </h1>
+
+            <p class="text-slate-500 mb-8 max-w-[480px] text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque fugit, officia cum animi modi quae culpa atque officiis
+              eligendi consectetur ratione magnam est neque, amet odio eum
+              molestias, autem eius!
+            </p>
+            <button class="w-full rounded-md bg-slate-900 px-8 py-2.5 font-semibold text-white shadow-md shadow-slate-500/20 hover:bg-slate-600 duration-200 sm:w-auto">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== END Hero ==== -->
+
+    <!-- ==== Header ==== -->
+    <!-- ==== END Header ==== -->
+
+    <!-- ==== Header ==== -->
+    <!-- ==== END Header ==== -->
+  </body>
+</html>
